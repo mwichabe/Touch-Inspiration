@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "fc6877fa-910d-4058-86e1-86a4d6089188",
+		"name": "frontend-interview.postman.collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://frontend-interview.touchinspiration.net/",
+			"item": [
+				{
+					"name": "create user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Frans Haggerwood\",\n    \"email\":\"fhaggerwood2@cyberchimps.com\",\n    \"occupation\":\"Analyst Programmer\",\n    \"bio\":\"suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis\"\n}\n"
+						},
+						"url": {
+							"raw": "https://frontend-interview.touchinspiration.net/api/user",
+							"protocol": "https",
+							"host": [
+								"frontend-interview",
+								"touchinspiration",
+								"net"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read by id localhost",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://frontend-interview.touchinspiration.net/api/user/640ec90c01d694939222007b",
+							"protocol": "https",
+							"host": [
+								"frontend-interview",
+								"touchinspiration",
+								"net"
+							],
+							"path": [
+								"api",
+								"user",
+								"640ec90c01d694939222007b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read all localhost",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://frontend-interview.touchinspiration.net/api/users",
+							"protocol": "https",
+							"host": [
+								"frontend-interview",
+								"touchinspiration",
+								"net"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hello world",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://frontend-interview.touchinspiration.net/api/",
+							"protocol": "https",
+							"host": [
+								"frontend-interview",
+								"touchinspiration",
+								"net"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "import",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://frontend-interview.touchinspiration.net/api/import",
+							"protocol": "https",
+							"host": [
+								"frontend-interview",
+								"touchinspiration",
+								"net"
+							],
+							"path": [
+								"api",
+								"import"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update by id localhost",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Bobby Nyox Maden\",\n    \"email\":\"bob@home.pl\",\n    \"occupation\":\"Bob Engineer\",\n    \"bio\":\"ornare consequat lectus in est risus auctor sed tristique in tempus sit amet\"\n}"
+						},
+						"url": {
+							"raw": "https://frontend-interview.touchinspiration.net/api/user/640ebfb1fccf79ba2b8c0f8",
+							"protocol": "https",
+							"host": [
+								"frontend-interview",
+								"touchinspiration",
+								"net"
+							],
+							"path": [
+								"api",
+								"user",
+								"640ebfb1fccf79ba2b8c0f8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete item by id localhost",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://frontend-interview.touchinspiration.net/api/user/640ea7aeda50011fa74ff5f9",
+							"protocol": "https",
+							"host": [
+								"frontend-interview",
+								"touchinspiration",
+								"net"
+							],
+							"path": [
+								"api",
+								"user",
+								"640ea7aeda50011fa74ff5f9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
